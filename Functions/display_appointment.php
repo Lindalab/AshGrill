@@ -3,7 +3,7 @@ require_once("../Controllers/appointment_controller.php");
 
 function showAppointmentUsers_fnc()
 {
-    $mydata = getAllBooking_ctr();
+    $mydata = getAllAppointment_ctr();
 
     echo "<table class='table'>
     <thead class='table-dark'>
