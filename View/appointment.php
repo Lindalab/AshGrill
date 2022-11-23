@@ -111,7 +111,14 @@ require("../Functions/display_appointment.php");
 
 
     <!-- Appointment Start -->
-    <?php showAppointmentUsers_fnc(); ?>
+    <?php 
+    $s_id = 1;
+    if(isset($_GET['service'])){
+        $s_id = $_GET['service'];
+    }
+    showAppointmentUsers_fnc($s_id); 
+    
+    ?>
     <!-- Appointment End -->
         
 

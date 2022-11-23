@@ -17,7 +17,7 @@ function payWithPaystack(e) {
       let message = "Payment complete! Reference:" + response.reference;
       alert(message);
       $.ajax({
-        url: 'paymentprocess.php/verify_transaction?reference='+ response.reference,
+        url: '../Actions/Paymentprocess.php/verify_transaction?reference='+ response.reference,
         method: 'get',
         success: function (response) {
           // the transaction status is in response.data.status

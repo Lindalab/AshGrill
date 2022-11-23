@@ -110,7 +110,7 @@ require("../Functions/display_service.php");
 
 
     <!-- About Start -->
-    <?php showServicesUsers_fnc(); ?>
+    <?php echo showServicesUsers_fnc(); ?>
     
     <!-- About End -->
 
